@@ -8,14 +8,6 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
-@app.route('/<city>')
-def search_city(city):
-    API_KEY = 'd8b296358b6b306e0f394bcfe12e7d68'
-
-    url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&APPID={API_KEY}'
-    response = request.get(url).json()
-
-    return response
 
 @app.route('/result', methods=['POST'])
 def res():
