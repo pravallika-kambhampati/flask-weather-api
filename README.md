@@ -1,7 +1,7 @@
 # :zap: Flask-Weather-API 
 
-A simple flask OpenWeatherMap api based app that tells you the weather of a city.
-[link to the app](https://pravzzyy-flask-weather-api-1.glitch.me/)
+A simple flask OpenWeatherMap api based app that tells you the weather of a city. <br/>
+[https://pravzzyy-flask-weather-api-1.glitch.me/](https://pravzzyy-flask-weather-api-1.glitch.me/)
 
 ## :wrench: Features
 - Temperature
