@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<br>
+ 
+<div class="container">
+<form action="/result" method='POST'>
+  <label for="city"></label>
+  <input id="city" name="city" placeholder="City here" type="text">
+  <br>
+  <br>
+  <div class="buttons">
+    <button class="button is-link is-light" type="submit">Find!</button>
+  </div>
+  
+</form>
+
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+<br>
+<div class="container">
+    <article class="message is-danger">
+        <div class="message-body">
+           
+            Oops! The city <i><strong>{{ city_name }}</strong></i>   does not exist.
+             
+        </div>
+    </article>
+    <br>
+    <form action="/home">
+        <div class="buttons">
+          <button class="button is-primary is-light">Wanna try again?</button>
+        </div>
+      </form>
+</div>
+
+
+{% endblock %}

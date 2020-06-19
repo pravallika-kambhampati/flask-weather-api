@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+  
+    <div class="container">
+    <div class="card">
+    <div class="card-content">
+      <h1 style="font-size: large; font-weight: bold; text-align: center;">{{ cname }}</h1>
+      <br>
+      <p style="font-weight: bold; text-align: center;">
+           Main : {{ main }}
+      </p>   
+    </div>
+    <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab"><a href="#test4">Temperature</a></li>
+        <li class="tab"><a  href="#test5">Humidity</a></li>
+        <li class="tab"><a href="#test6">Wind Speed</a></li>
+      </ul>
+    </div>
+    <div class="card-content grey lighten-4">
+      <div id="test4">{{ temp }}</div>
+      <div id="test5">{{ humidity }}</div>
+      <div id="test6">{{ wind_speed }}</div>
+    </div>
+  </div>
+  <form action="/home">
+    <div class="buttons">
+      <button class="button is-primary is-light">Another city?</button>
+    </div>
+  </form>
+  
+  
+    </div>
+    
+
+  
+
+
+
+{% endblock %}
