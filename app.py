@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 
-@app.route('/home')
+@app.route('/')
 def home():
     return render_template('home.html')
 
@@ -14,7 +14,9 @@ def res():
         import requests
         city_name = request.form.get('city')
         API_KEY = 'd8b296358b6b306e0f394bcfe12e7d68'
-        url = f'http://api.openweathermap.org/data/2.5/weather?q={city_name}&APPID={API_KEY}'
+        base_url = "http://api.openweathermap.org/data/2.5/weather?"
+        url = base_url + "appid=" + API_KEY + "&q=" + city_name 
+
         try:
 
             response = requests.get(url).json()
