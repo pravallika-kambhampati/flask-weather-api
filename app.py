@@ -22,7 +22,7 @@ def res():
         import requests
         city_name = request.form.get('city')
         API_KEY = 'd8b296358b6b306e0f394bcfe12e7d68'
-        url = f'http://api.openweathermap.org/data/2.5/weather?q={city_name}&APPID={API_KEY}'
+        url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&APPID={API_KEY}'
         try:
 
             response = requests.get(url).json()
